@@ -269,10 +269,11 @@ nav {
     border-radius: 50%;
     cursor: pointer;
 }
-/* Feature Section End  */ 
+
+/* Feature Section End  */
 
 /* organize Section start */
-.organize{
+.organize {
     width: 1243px;
     max-width: 95%;
     margin: 0 auto;
@@ -282,14 +283,14 @@ nav {
     align-items: center;
 }
 
-.organize_txt{
+.organize_txt {
     width: 42%;
     display: flex;
     flex-direction: column;
     gap: 60px;
 }
 
-.organize_txt_content{
+.organize_txt_content {
     width: 100%;
     height: 237px;
     display: flex;
@@ -297,7 +298,7 @@ nav {
     gap: 7px;
 }
 
-.organize_txt_content h2{
+.organize_txt_content h2 {
     font-family: 'Graphik';
     font-weight: 400;
     font-size: 48px;
@@ -306,7 +307,7 @@ nav {
     color: #252B42;
 }
 
-.organize_txt_content h4{
+.organize_txt_content h4 {
     font-family: 'Graphik';
     font-weight: 400;
     font-size: 28px;
@@ -314,7 +315,7 @@ nav {
     color: #374754;
 }
 
-.organize_btn button{
+.organize_btn button {
     width: 40%;
     border: none;
     border-radius: 35px;
@@ -328,10 +329,11 @@ nav {
     background-color: #2091F9;
     cursor: pointer;
 }
+
 /* organize Section End */
 
 /* PhotoGraph Section start */
-.photoGraph{
+.photoGraph {
     width: 1343px;
     margin: 0 auto;
     padding: 43px 0;
@@ -340,7 +342,7 @@ nav {
     justify-content: space-between;
 }
 
-.register{
+.register {
     width: 41%;
     height: 500px;
     padding: 0 0 0 63px;
@@ -350,7 +352,7 @@ nav {
     gap: 15px;
 }
 
-.register_txt_content h3{
+.register_txt_content h3 {
     font-family: 'Graphik';
     font-weight: 700;
     font-size: 20px;
@@ -359,7 +361,7 @@ nav {
     color: #252B42;
 }
 
-.register_txt_content h2{
+.register_txt_content h2 {
     font-family: 'Graphik';
     font-weight: 400;
     font-size: 48px;
@@ -368,7 +370,7 @@ nav {
     color: #252B42;
 }
 
-.register_Email{
+.register_Email {
     width: 100%;
     padding: 11px;
     display: flex;
@@ -376,7 +378,7 @@ nav {
     gap: 13px;
 }
 
-.register_Email h3{
+.register_Email h3 {
     font-family: 'Graphik';
     font-weight: 700;
     font-size: 20px;
@@ -385,7 +387,7 @@ nav {
     color: #252B42;
 }
 
-.register_Email p{
+.register_Email p {
     font-family: 'Graphik';
     font-weight: 400;
     font-size: 18px;
@@ -394,14 +396,14 @@ nav {
     color: #374754;
 }
 
-.email{
+.email {
     width: 100%;
     display: flex;
     padding: 34px 0;
     gap: 12px;
 }
 
-.input_email{
+.input_email {
     width: 62%;
     height: 54px;
     border: 1px solid #e8e8e8;
@@ -410,7 +412,7 @@ nav {
     background-color: #F4F4F4;
 }
 
-.mailBtn{
+.mailBtn {
     width: 36%;
     border: none;
     border-radius: 35px;
@@ -424,4 +426,167 @@ nav {
     background-color: #2091F9;
     cursor: pointer;
 }
+
 /* PhotoGraph Section End */
+
+/* Client Section Start */
+.client {
+    width: 1342px;
+    margin: 0 auto;
+    padding: 80px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.partner {
+    padding-top: 33px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+}
+
+.partner h2 {
+    font-family: 'Graphik';
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 55px;
+    letter-spacing: 0.2px;
+    color: #252B42;
+}
+
+.partner h4 {
+    font-family: 'Graphik';
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: 0.2px;
+    text-align: center;
+    color: #252B42;
+}
+
+.clientsLogo {
+    width: 1100px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.logo_box {
+    height: 165px;
+    padding: 31px 40px;
+    border: 1px solid #D8D8D8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo_box h6 {
+    font-family: 'Graphik';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    letter-spacing: 0.1px;
+    color: #374754;
+}
+
+.ClientBtn {
+    width: 18%;
+    border: none;
+    border-radius: 35px;
+    padding: 16px 0;
+    font-family: 'Graphik';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.1px;
+    color: #FFFFFF;
+    background-color: #2091F9;
+    cursor: pointer;
+}
+
+/* Client Section End */
+
+/* designer Section start */
+.designer {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+}
+
+.designer_title h2 {
+    font-family: 'Graphik';
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 55px;
+    letter-spacing: 0.2px;
+    color: #252B42;
+}
+
+.about_IBM {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.about_IBM h4 {
+    font-family: 'Graphik';
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: 0.2px;
+    text-align: center;
+    color: #374754;
+}
+
+.about_designer {
+    display: flex;
+    gap: 13px;
+}
+
+.visit_designer h5 {
+    font-family: 'Graphik';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    letter-spacing: 0.1px;
+    color: #374754;
+}
+
+.visit_designer p {
+    font-family: 'Graphik';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+    color: #252B42;
+    cursor: pointer;
+}
+
+.visit_designer:hover p {
+    text-decoration: underline;
+}
+
+.designer_btn{
+    width: 18px;
+    border: none;
+    border-radius: 35px;
+    padding: 16px 0;
+    font-family: 'Graphik';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.1px;
+    color: #FFFFFF;
+    background-color: #2091F9;
+
+}
+
+/* designer Section End */
