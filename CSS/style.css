@@ -164,6 +164,10 @@ nav {
 /* Feature Section Start  */
 .container {
     width: 100%;
+
+    &.active {
+        background-color: #252B42;
+    }
 }
 
 .features {
@@ -510,7 +514,8 @@ nav {
 /* Client Section End */
 
 /* designer Section start */
-.designer {
+.designer,
+.pricing {
     width: 1200px;
     margin: 0 auto;
     padding: 100px;
@@ -574,7 +579,7 @@ nav {
     text-decoration: underline;
 }
 
-.designer_btn{
+.designer_btn {
     width: 28%;
     border: none;
     border-radius: 35px;
@@ -585,8 +590,442 @@ nav {
     line-height: 28px;
     letter-spacing: 0.1px;
     color: #FFFFFF;
-    background-color: #2091F9;
-
+    background-color: #2091F9;   
+    cursor: pointer;
 }
 
 /* designer Section End */
+
+/* Pricing Section start */
+
+.pricing_txt_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.pricing_txt_content h2 {
+    font-family: 'Graphik';
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 55px;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+}
+
+.pricing_txt_content h4 {
+    font-family: 'Graphik';
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: 0.2px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.sales_deal {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.deal {
+    width: 30%;
+    height: 607px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    border: 1px solid #DEDEDE;
+    border-radius: 11px;
+    background-color: #FFFFFF;
+
+    &.active {
+        background-color: #2091F9;
+        height: 693px;
+        padding: 83px 40px;
+    }
+}
+
+.head {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.head h3 {
+    font-family: 'Graphik';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.1px;
+    color: #252B42;
+
+    &.active {
+        color: #FFFFFF;
+    }
+}
+
+.head h6 {
+    font-family: 'Graphik';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    letter-spacing: 0.1px;
+    text-align: center;
+    color: #374754;
+
+    &.active {
+        color: #FFFFFF;
+    }
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+}
+
+.price h1 {
+    font-family: 'Graphik';
+    font-weight: 700;
+    font-size: 74px;
+    line-height: 84px;
+    letter-spacing: 0.2px;
+    color: #252B42;
+
+    &.active {
+        color: #FFFFFF;
+    }
+}
+
+.doller {
+    display: flex;
+    flex-direction: column;
+}
+
+.doller h3 {
+    font-family: 'Graphik';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.1px;
+    color: #252B42;
+
+    &.active {
+        color: #FFFFFF;
+    }
+}
+
+.doller h6 {
+    font-family: 'Graphik';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    letter-spacing: 0.1px;
+    color: #374754;
+
+    &.active {
+        color: #FFFFFF;
+    }
+}
+
+.feature_row ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+}
+
+.feature_row ul li {
+    font-family: 'Graphik';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+    color: #252B42;
+
+    &.active {
+        color: #FFFFFF;
+    }
+}
+
+.confirm_deal {
+    width: 100%;
+    padding: 18px;
+    border: none;
+    border-radius: 35px;
+    font-family: 'Graphik';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+    background-color: #2091F9;
+    cursor: pointer;
+
+    &.active {
+        color: #2091F9;
+        background-color: #FFFFFF;
+    }
+}
+
+/* Pricing Section End */
+
+/* Contact Section start */
+.contact {
+    width: 1228px;
+    margin: 0 auto;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.contact_txt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.contact_txt h2 {
+    font-family: 'Graphik';
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 55px;
+    letter-spacing: 0.2px;
+    color: #252B42;
+}
+
+.contact_txt h4 {
+    font-family: 'Graphik';
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: 0.2px;
+    text-align: center;
+    color: #374754;
+}
+
+.contact_info {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.signUp_form {
+    width: 37%;
+    padding: 52px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 45px;
+    border: 1px solid #DDDDDD;
+    border-radius: 21px;
+    box-shadow: 0 13px 19px 0 rgba(0, 0, 0, 0.07);
+}
+
+.signUp_form h3 {
+    font-family: 'Graphik';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.1px;
+    color: #252B42;
+}
+
+.name,
+.Email {
+    width: 80%;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 16px;
+    letter-spacing: 0.1px;
+    color: #18171D;
+    border: 1px solid #E8E8E8;
+    border-radius: 39px;
+    padding: 19px 20px;
+    background-color: #F5F5F5;
+    outline: none;
+}
+
+.selfAbout {
+    padding: 23px 20px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 16px;
+    letter-spacing: 0.1px;
+    color: #18171D;
+    background-color: #F5F5F5;
+    border: 1px solid #E8E8E8;
+    outline: none;
+    resize: none;
+}
+
+.btn{
+    padding-left: 41px;
+    width: 100%;
+}
+
+.signUp_btn {
+    width: 35%;
+    border: none;
+    border-radius: 35px;
+    padding: 18px 0;
+    font-family: 'Graphik';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+    background-color: #2091F9;
+    cursor: pointer;
+}
+
+.our_info {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.information {
+    display: flex;
+    gap: 15px;
+}
+
+.address {
+    width: 41%
+}
+
+.phone {
+    width: 20%
+}
+
+.mail {
+    width: 35%
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 11px;
+}
+
+.block img {
+    width: 26px;
+    height: 32px;
+}
+
+.block h6 {
+    font-family: 'Graphik';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    letter-spacing: 0.1px;
+    text-align: center;
+    color: #374754;
+    cursor: pointer;
+}
+
+.map {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.social_icon {
+    display: flex;
+    gap: 24px;
+}
+
+/* Contact Section End */
+
+/* Footer start */
+.visiting {
+    padding: 150px 0;
+    margin: 0 auto;
+    width: 991px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.visitSite {
+    width: 70%;
+    display: flex;
+    gap: 20px;
+}
+
+.footer_menu {
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer_menu h3 {
+    font-family: 'Graphik';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.1px;
+    color: #FFFFFF;
+}
+
+.footer_menu ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.footer_menu ul a {
+    font-family: 'Graphik';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.our_netWork {
+    width: 27%;
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+
+.location,
+.Ph_num {
+    display: flex;
+    align-items: center;
+}
+
+.location p,
+.Ph_num p{
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 27px;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+}
+
+.foot_media{
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+/* Footer End */
