@@ -40,53 +40,66 @@
     src: url('/fonts/GraphikThin.otf') format('opentype');
 }
 
+/* header Start  */
 header {
     width: 100%;
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     position: absolute;
     z-index: 1000;
 }
 
 nav {
-    width: 1210px;
-    max-width: 95%;
+    max-width: 1210px;
+    width: 95%;
     height: 156px;
     margin: 0 auto;
     display: flex;
     align-items: center;
-    justify-content: center;
+}
+
+.nav_links {
+    width: 37%;
 }
 
 .nav_links ul {
-    width: 437px;
-    height: 48px;
     display: flex;
     align-items: center;
     gap: 21px;
     list-style-type: none;
 }
 
-.nav_links ul a {
-    width: 20%;
+.nav_links ul li {
+    width: 17%;
     font-family: 'Graphik';
     font-weight: 400;
     font-size: 15px;
+}
+
+
+.nav_links ul a {
     color: #FFFFFF;
     letter-spacing: 0.2px;
     text-decoration: none;
 }
 
+.nav_links ul li :hover {
+    color: #2091F9;
+    transition: all 0.3s;
+}
+
 .brandLogo {
-    width: 246px;
+    width: 37%;
     height: 78px;
     padding: 0px 20px;
 }
 
 .nav_media {
-    margin-left: 31%;
+    width: 26%;
     display: flex;
+    justify-content: end;
+    align-items: center;
     gap: 24px;
 }
 
@@ -102,25 +115,23 @@ nav {
 }
 
 .banner_sec {
-    width: 1440px;
-    max-width: 95%;
-    height: 885px;
-    padding: 80px 0;
+    max-width: 1440px;
+    width: 95%;
+    padding: 130px 0 80px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 40px;
+    gap: 60px;
 }
 
 .banner_txt {
-    width: 58%;
-    height: 374px;
-    padding: 20px;
-    margin-top: 12%;
+    width: 786px;
+    padding: 20px 0;
+    margin-top: 144px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 12px;
 }
 
 .banner_txt h1 {
@@ -143,22 +154,6 @@ nav {
     color: #FFFFFF;
 }
 
-.banner_btn button {
-    width: 236px;
-    margin: 32px 0 0;
-    padding: 16px 0;
-    font-family: 'Graphik';
-    font-weight: 400;
-    font-size: 20px;
-    letter-spacing: 0.2px;
-    text-align: center;
-    color: #FFFFFF;
-    background-color: #2091F9;
-    border: none;
-    border-radius: 35px;
-    cursor: pointer;
-}
-
 /* Banner End  */
 
 /* Feature Section Start  */
@@ -171,8 +166,8 @@ nav {
 }
 
 .features {
-    width: 1180px;
-    max-width: 95%;
+    max-width: 1180px;
+    width: 95%;
     padding-top: 65px;
     margin: 0 auto;
     display: flex;
@@ -209,7 +204,9 @@ nav {
 }
 
 .features_items {
+    width: 100%;
     display: flex;
+    justify-content: center;
     align-items: center;
     gap: 52px;
 }
@@ -220,15 +217,6 @@ nav {
     flex-direction: column;
     align-items: center;
     gap: 11px;
-}
-
-.item1,
-.item3 {
-    height: 257px;
-}
-
-.item2 {
-    height: 224px;
 }
 
 .featureItem_head {
@@ -252,14 +240,14 @@ nav {
 }
 
 .features_video {
-    width: 1177px;
-    height: 762px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 100%;
     background-image: url('/Images/video_screen.svg');
     background-position: center;
     background-size: cover;
+    aspect-ratio: 14/9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .play_btn {
@@ -278,8 +266,8 @@ nav {
 
 /* organize Section start */
 .organize {
-    width: 1243px;
-    max-width: 95%;
+    max-width: 1243px;
+    width: 95%;
     margin: 0 auto;
     padding: 269px 0;
     display: flex;
@@ -288,15 +276,13 @@ nav {
 }
 
 .organize_txt {
-    width: 42%;
+    width: 529px;
     display: flex;
     flex-direction: column;
     gap: 60px;
 }
 
 .organize_txt_content {
-    width: 100%;
-    height: 237px;
     display: flex;
     flex-direction: column;
     gap: 7px;
@@ -316,11 +302,12 @@ nav {
     font-weight: 400;
     font-size: 28px;
     line-height: 40px;
+    letter-spacing: 0.2px;
     color: #374754;
 }
 
-.organize_btn button {
-    width: 40%;
+.try_free_btn {
+    width: 236px;
     border: none;
     border-radius: 35px;
     padding: 16px 0;
@@ -331,14 +318,21 @@ nav {
     letter-spacing: 0.2px;
     color: #FFFFFF;
     background-color: #2091F9;
-    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.laptop_screen {
+    width: 646px;
 }
 
 /* organize Section End */
 
 /* PhotoGraph Section start */
 .photoGraph {
-    width: 1343px;
+    max-width: 1343px;
+    width: 95%;
     margin: 0 auto;
     padding: 43px 0;
     display: flex;
@@ -346,10 +340,12 @@ nav {
     justify-content: space-between;
 }
 
+.img_screen {
+    width: 677px;
+}
+
 .register {
-    width: 41%;
-    height: 500px;
-    padding: 0 0 0 63px;
+    width: 477px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -375,7 +371,6 @@ nav {
 }
 
 .register_Email {
-    width: 100%;
     padding: 11px;
     display: flex;
     flex-direction: column;
@@ -401,23 +396,28 @@ nav {
 }
 
 .email {
-    width: 100%;
     display: flex;
     padding: 34px 0;
     gap: 12px;
 }
 
 .input_email {
-    width: 62%;
-    height: 54px;
+    width: 271px;
     border: 1px solid #e8e8e8;
     border-radius: 39px;
-    padding: 19px 39px;
+    padding: 19px 30px;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.1px;
+    color: #18171D;
     background-color: #F4F4F4;
+    outline: none;
 }
 
 .mailBtn {
-    width: 36%;
+    width: 172px;
     border: none;
     border-radius: 35px;
     padding: 19px 38px;
@@ -435,7 +435,8 @@ nav {
 
 /* Client Section Start */
 .client {
-    width: 1342px;
+    max-width: 1342px;
+    width: 95%;
     margin: 0 auto;
     padding: 80px 0;
     display: flex;
@@ -472,14 +473,15 @@ nav {
 }
 
 .clientsLogo {
-    width: 1100px;
+    width: 84%;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
 .logo_box {
-    height: 165px;
-    padding: 31px 40px;
+    width: 268px;
+    padding: 31px 0;
     border: 1px solid #D8D8D8;
     display: flex;
     flex-direction: column;
@@ -496,29 +498,15 @@ nav {
     color: #374754;
 }
 
-.ClientBtn {
-    width: 18%;
-    border: none;
-    border-radius: 35px;
-    padding: 16px 0;
-    font-family: 'Graphik';
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 28px;
-    letter-spacing: 0.1px;
-    color: #FFFFFF;
-    background-color: #2091F9;
-    cursor: pointer;
-}
-
 /* Client Section End */
 
 /* designer Section start */
 .designer,
 .pricing {
-    width: 1200px;
+    max-width: 1200px;
+    width: 95%;
     margin: 0 auto;
-    padding: 100px;
+    padding: 100px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -535,6 +523,7 @@ nav {
 }
 
 .about_IBM {
+    width: 987px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -553,6 +542,7 @@ nav {
 
 .about_designer {
     display: flex;
+    align-items: center;
     gap: 13px;
 }
 
@@ -580,9 +570,11 @@ nav {
 }
 
 .designer_btn {
-    width: 28%;
+    width: 276px;
     border: none;
     border-radius: 35px;
+    display: flex;
+    justify-content: center;
     padding: 16px 0;
     font-family: 'Graphik';
     font-weight: 700;
@@ -590,7 +582,8 @@ nav {
     line-height: 28px;
     letter-spacing: 0.1px;
     color: #FFFFFF;
-    background-color: #2091F9;   
+    background-color: #2091F9;
+    text-decoration: none;
     cursor: pointer;
 }
 
@@ -631,8 +624,7 @@ nav {
 }
 
 .deal {
-    width: 30%;
-    height: 607px;
+    width: 335px;
     padding: 40px;
     display: flex;
     flex-direction: column;
@@ -644,13 +636,12 @@ nav {
 
     &.active {
         background-color: #2091F9;
-        height: 693px;
         padding: 83px 40px;
     }
 }
 
 .head {
-    width: 75%;
+    width: 148px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -778,7 +769,8 @@ nav {
 
 /* Contact Section start */
 .contact {
-    width: 1228px;
+    max-width: 1228px;
+    width: 95%;
     margin: 0 auto;
     padding: 50px 0;
     display: flex;
@@ -814,12 +806,13 @@ nav {
 
 .contact_info {
     display: flex;
+    justify-content: center;
     align-items: center;
     gap: 50px;
 }
 
 .signUp_form {
-    width: 37%;
+    width: 453px;
     padding: 52px 0;
     display: flex;
     flex-direction: column;
@@ -856,6 +849,8 @@ nav {
 }
 
 .selfAbout {
+    width: 80%;
+    height: 193px;
     padding: 23px 20px;
     font-family: 'Roboto';
     font-weight: 400;
@@ -869,13 +864,13 @@ nav {
     resize: none;
 }
 
-.btn{
+.btn {
     padding-left: 41px;
     width: 100%;
 }
 
 .signUp_btn {
-    width: 35%;
+    width: 145px;
     border: none;
     border-radius: 35px;
     padding: 18px 0;
@@ -890,7 +885,7 @@ nav {
 }
 
 .our_info {
-    width: 60%;
+    width: 725px;
     display: flex;
     flex-direction: column;
     gap: 50px;
@@ -902,15 +897,15 @@ nav {
 }
 
 .address {
-    width: 41%
+    width: 313px
 }
 
 .phone {
-    width: 20%
+    width: 137px;
 }
 
 .mail {
-    width: 35%
+    width: 245px;
 }
 
 .block {
@@ -944,6 +939,7 @@ nav {
 
 .social_icon {
     display: flex;
+    align-items: center;
     gap: 24px;
 }
 
@@ -951,21 +947,22 @@ nav {
 
 /* Footer start */
 .visiting {
+    max-width: 991px;
+    width: 95%;
     padding: 150px 0;
     margin: 0 auto;
-    width: 991px;
     display: flex;
     justify-content: space-between;
 }
 
 .visitSite {
-    width: 70%;
+    width: 582px;
     display: flex;
     gap: 20px;
 }
 
 .footer_menu {
-    width: 32%;
+    width: 180px;
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -987,19 +984,26 @@ nav {
     gap: 16px;
 }
 
-.footer_menu ul a {
+.footer_menu ul li {
     font-family: 'Graphik';
     font-weight: 400;
     font-size: 15px;
     line-height: 28px;
+}
+
+.footer_menu ul a {
     letter-spacing: 0.2px;
     color: #FFFFFF;
     text-decoration: none;
-    cursor: pointer;
+}
+
+.footer_menu ul li :hover {
+    color: #2091F9;
+    transition: all 0.3s;
 }
 
 .our_netWork {
-    width: 27%;
+    width: 284px;
     display: flex;
     flex-direction: column;
     gap: 11px;
@@ -1012,7 +1016,7 @@ nav {
 }
 
 .location p,
-.Ph_num p{
+.Ph_num p {
     font-family: 'Roboto';
     font-weight: 400;
     font-size: 15px;
@@ -1021,7 +1025,7 @@ nav {
     color: #FFFFFF;
 }
 
-.foot_media{
+.foot_media {
     padding: 20px 0;
     display: flex;
     align-items: center;
@@ -1029,3 +1033,577 @@ nav {
 }
 
 /* Footer End */
+
+/* For Tablet */
+@media only screen and (min-width: 600px) and (max-width: 1199px) {
+
+    /* navBar Start  */
+    nav {
+        max-width: 1000px;
+        height: 100px;
+    }
+
+    .nav_links {
+        width: 37%;
+    }
+
+    .nav_links ul {
+        gap: 7px;
+    }
+
+    .nav_links ul a {
+        width: 20%;
+        font-size: 13px;
+    }
+
+    .brandLogo {
+        height: 60px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav_media {
+        gap: 17px;
+    }
+
+    .nav_media img {
+        width: 30px;
+        height: 24px;
+    }
+
+    /* navBar End */
+
+    /* Banner Start  */
+    .banner_sec {
+        max-width: 1200px;
+        gap: 30px;
+    }
+
+    .banner_txt {
+        width: 555px;
+        margin-top: 100px;
+        height: 400px;
+    }
+
+    .banner_txt h1 {
+        font-size: 58px;
+        font-weight: 600;
+        line-height: 75px;
+    }
+
+    .banner_txt h4 {
+        font-size: 25px;
+        line-height: 35px;
+    }
+
+    /* Banner End  */
+
+    /* Feature Section Start  */
+    .features {
+        max-width: 1000px;
+        padding-top: 55px;
+        gap: 40px;
+    }
+
+    .features_txt {
+        gap: 7px;
+    }
+
+    .features_txt h2 {
+        font-size: 30px;
+    }
+
+    .features_txt h4 {
+        font-size: 17px;
+        line-height: 25px;
+    }
+
+    .features_items {
+        gap: 30px;
+    }
+
+    .features_items img {
+        width: 35px;
+    }
+
+    .featureItem_head {
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 21px;
+    }
+
+    .featureItem_para {
+        font-size: 12px;
+        line-height: 21px;
+    }
+
+    .play_btn {
+        width: 120px;
+        height: 120px;
+    }
+
+    .play_btn img {
+        width: 30px;
+        height: 38px;
+    }
+
+    /* Feature Section End  */
+
+    /* organize Section start */
+    .organize {
+        max-width: 1000px;
+        padding: 172px 0;
+    }
+
+    .organize_txt {
+        gap: 30px;
+    }
+
+    .organize_txt_content {
+        gap: 12px;
+    }
+
+    .organize_txt_content h2 {
+        font-size: 40px;
+        line-height: 41px;
+    }
+
+    .organize_txt_content h4 {
+        font-size: 21px;
+        line-height: 30px;
+    }
+
+    .organize_btn {
+        width: 141px;
+        font-size: 15px;
+        line-height: 21px;
+    }
+
+    .laptop_screen {
+        width: 388px;
+    }
+
+    /* organize Section End */
+
+    /* PhotoGraph Section start */
+    .photoGraph {
+        max-width: 1000px;
+        padding: 30px 0;
+    }
+
+    .img_screen {
+        width: 335px;
+    }
+
+    .register {
+        width: 330px;
+        gap: 11px;
+    }
+
+    .register_txt_content h3 {
+        font-size: 15px;
+        line-height: 21px;
+    }
+
+    .register_txt_content h2 {
+        font-size: 40px;
+        line-height: 41px;
+    }
+
+    .register_Email {
+        padding: 7px;
+        gap: 11px;
+    }
+
+    .register_Email h3 {
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 21px;
+    }
+
+    .register_Email p {
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    .email {
+        display: flex;
+        padding: 25px 0;
+        gap: 10px;
+    }
+
+    .input_email {
+        width: 200px;
+        border-radius: 30px;
+        padding: 12px 18px;
+        font-size: 12px;
+        line-height: 12px;
+        letter-spacing: 0.1px;
+    }
+
+    .mailBtn {
+        width: 110px;
+        border-radius: 30px;
+        padding: 12px 18px;
+        font-size: 12px;
+        line-height: 12px;
+    }
+
+    /* PhotoGraph Section End */
+
+    /* Client Section Start */
+    .client {
+        max-width: 1000px;
+        padding: 40px 0;
+        gap: 40px;
+    }
+
+    .partner {
+        padding-top: 25px;
+        gap: 5px;
+    }
+
+    .partner h2 {
+        font-size: 35px;
+        line-height: 41px;
+    }
+
+    .partner h4 {
+        font-size: 21px;
+        line-height: 30px;
+    }
+
+    .logo_box {
+        width: 172px;
+        padding: 21px 0;
+        gap: 11px;
+    }
+
+    .logo_box h6 {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .logo_box img {
+        width: 121px;
+    }
+
+    /* Client Section End */
+
+    /* designer Section start */
+    .designer,
+    .pricing {
+        max-width: 1000px;
+        padding: 50px 0;
+        gap: 40px;
+    }
+
+    .designer_title h2 {
+        font-size: 35px;
+        line-height: 41px;
+    }
+
+    .about_IBM {
+        width: 487px;
+        gap: 35px;
+    }
+
+    .IBM_logo {
+        width: 141px;
+    }
+
+    .about_IBM h4 {
+        font-size: 23px;
+        line-height: 30px;
+    }
+
+    .about_designer {
+        gap: 10px;
+    }
+
+    .visit_designer h5 {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .visit_designer p {
+        font-size: 12px;
+        line-height: 21px;
+    }
+
+    .designer_btn {
+        width: 200px;
+        border-radius: 30px;
+        padding: 16px 0;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 21px;
+    }
+
+    /* designer Section End */
+
+    /* Pricing Section start */
+
+    .pricing_txt_content {
+        gap: 7px;
+    }
+
+    .pricing_txt_content h2 {
+        font-size: 35px;
+        line-height: 41px;
+    }
+
+    .pricing_txt_content h4 {
+        font-size: 23px;
+        line-height: 30px;
+    }
+
+    .sales_deal {
+        gap: 25px;
+    }
+
+    .deal {
+        width: 235px;
+        padding: 20px;
+        gap: 21px;
+
+        &.active {
+            padding: 60px 20px;
+        }
+    }
+
+    .head {
+        width: 92px;
+        gap: 7px;
+    }
+
+    .head h3 {
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 21px;
+    }
+
+    .head h6 {
+        font-size: 12px;
+        line-height: 17px;
+    }
+
+    .price {
+        gap: 7px;
+    }
+
+    .price h1 {
+        font-weight: 600;
+        font-size: 55px;
+        line-height: 50px;
+    }
+
+    .doller h3 {
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 21px;
+    }
+
+    .doller h6 {
+        font-size: 12px;
+        line-height: 17px;
+    }
+
+    .feature_row ul {
+        gap: 11px;
+    }
+
+    .feature_row ul li {
+        font-size: 12px;
+        line-height: 21px;
+    }
+
+    .confirm_deal {
+        padding: 16px;
+        border-radius: 30px;
+        font-size: 16px;
+        line-height: 15px;
+    }
+
+    /* Pricing Section End */
+
+    /* Contact Section start */
+    .contact {
+        max-width: 1000px;
+        padding: 25px 0;
+        gap: 25px;
+    }
+
+    .contact_txt {
+        gap: 12px;
+    }
+
+    .contact_txt h2 {
+        font-size: 35px;
+        line-height: 41px;
+    }
+
+    .contact_txt h4 {
+        font-size: 23px;
+        line-height: 35px;
+    }
+
+    .contact_info {
+        gap: 25px;
+    }
+
+    .signUp_form {
+        width: 250px;
+        padding: 25px 0;
+        gap: 25px;
+        border-radius: 17px;
+    }
+
+    .signUp_form h3 {
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 21px;
+    }
+
+    .name,
+    .Email {
+        width: 85%;
+        font-size: 12px;
+        line-height: 12px;
+        border-radius: 30px;
+        padding: 11px 12px;
+    }
+
+    .selfAbout {
+        width: 85%;
+        height: 112px;
+        padding: 13px 10px;
+        font-size: 12px;
+        line-height: 12px;
+    }
+
+    .btn {
+        padding-left: 21px;
+        width: 100%;
+    }
+
+    .signUp_btn {
+        width: 100px;
+        border-radius: 30px;
+        padding: 16px 0;
+        font-size: 16px;
+        line-height: 15px;
+    }
+
+    .our_info {
+        width: 400px;
+        gap: 25px;
+    }
+
+    .information {
+        display: flex;
+        gap: 7px;
+    }
+
+    .address {
+        width: 175px
+    }
+
+    .phone {
+        width: 95px;
+    }
+
+    .mail {
+        width: 220px;
+    }
+
+    .block {
+        gap: 7px;
+    }
+
+    .block img {
+        width: 16px;
+        height: 18px;
+    }
+
+    .block h6 {
+        font-size: 11px;
+        line-height: 17px;
+    }
+
+    .map img {
+        width: 316px;
+    }
+
+    .social_icon {
+        gap: 17px;
+    }
+
+    .social_icon img{
+        width: 25px;
+    }
+
+    /* Contact Section End */
+
+/* Footer start */
+.visiting {
+    max-width: 644px;
+    padding: 75px 0;
+}
+
+.visitSite {
+    width: 378px;
+    gap: 13px;
+}
+
+.footer_menu {
+    width: 117px;
+    gap: 12px;
+}
+
+.footer_menu h3 {
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 18px;
+}
+
+.footer_menu ul {
+    gap: 11px;
+}
+
+.footer_menu ul a {
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.our_netWork {
+    width: 184px;
+    gap: 7px;
+}
+
+.location p,
+.Ph_num p {
+    font-size: 12px;
+    line-height: 17px;
+}
+
+.location img{
+    width: 40px;
+}
+
+.Ph_num img{
+    width: 30px;
+}
+
+.foot_media {
+    padding: 12px 0;
+    gap: 16px;
+}
+
+.foot_media img{
+    width: 25px;
+}
+
+/* Footer End */
+
+}
