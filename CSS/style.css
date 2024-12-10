@@ -43,9 +43,6 @@
 /* header Start  */
 header {
     width: 100%;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
     position: absolute;
     z-index: 1000;
 }
@@ -103,11 +100,15 @@ nav {
     gap: 24px;
 }
 
+.toggler {
+    display: none;
+}
+
 /* navBar End */
 
 /* Banner Start  */
 .banner {
-    background-image: url('/Images/BG_Banner.svg');
+    background-image: url('/Images/background.png');
     background-position: center;
     background-size: cover;
     width: 100%;
@@ -177,6 +178,7 @@ nav {
 }
 
 .features_txt {
+    width: 552px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -446,6 +448,7 @@ nav {
 }
 
 .partner {
+    width: 530px;
     padding-top: 33px;
     display: flex;
     flex-direction: column;
@@ -469,7 +472,7 @@ nav {
     line-height: 40px;
     letter-spacing: 0.2px;
     text-align: center;
-    color: #252B42;
+    color: #374754;
 }
 
 .clientsLogo {
@@ -592,6 +595,7 @@ nav {
 /* Pricing Section start */
 
 .pricing_txt_content {
+    width: 530px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -747,7 +751,7 @@ nav {
 
 .confirm_deal {
     width: 100%;
-    padding: 18px;
+    padding: 18px 0;
     border: none;
     border-radius: 35px;
     font-family: 'Graphik';
@@ -779,6 +783,7 @@ nav {
 }
 
 .contact_txt {
+    width: 530px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1106,6 +1111,7 @@ nav {
     }
 
     .features_txt {
+        width: 355px;
         gap: 7px;
     }
 
@@ -1259,6 +1265,7 @@ nav {
     }
 
     .partner {
+        width: 412px;
         padding-top: 25px;
         gap: 5px;
     }
@@ -1345,6 +1352,7 @@ nav {
     /* Pricing Section start */
 
     .pricing_txt_content {
+        width: 412px;
         gap: 7px;
     }
 
@@ -1435,6 +1443,7 @@ nav {
     }
 
     .contact_txt {
+        width: 412px;
         gap: 12px;
     }
 
@@ -1539,71 +1548,434 @@ nav {
         gap: 17px;
     }
 
-    .social_icon img{
+    .social_icon img {
         width: 25px;
     }
 
     /* Contact Section End */
 
-/* Footer start */
-.visiting {
-    max-width: 644px;
-    padding: 75px 0;
+    /* Footer start */
+    .visiting {
+        max-width: 644px;
+        padding: 75px 0;
+    }
+
+    .visitSite {
+        width: 378px;
+        gap: 13px;
+    }
+
+    .footer_menu {
+        width: 117px;
+        gap: 12px;
+    }
+
+    .footer_menu h3 {
+        font-weight: 600;
+        font-size: 17px;
+        line-height: 18px;
+    }
+
+    .footer_menu ul {
+        gap: 11px;
+    }
+
+    .footer_menu ul a {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .our_netWork {
+        width: 184px;
+        gap: 7px;
+    }
+
+    .location p,
+    .Ph_num p {
+        font-size: 12px;
+        line-height: 17px;
+    }
+
+    .location img {
+        width: 40px;
+    }
+
+    .Ph_num img {
+        width: 30px;
+    }
+
+    .foot_media {
+        padding: 12px 0;
+        gap: 16px;
+    }
+
+    .foot_media img {
+        width: 25px;
+    }
+
+    /* Footer End */
+
 }
 
-.visitSite {
-    width: 378px;
-    gap: 13px;
-}
+/* for mobile  */
+@media only screen and (max-width: 599px) {
 
-.footer_menu {
-    width: 117px;
-    gap: 12px;
-}
+    /* navBar Start  */
 
-.footer_menu h3 {
-    font-weight: 600;
-    font-size: 17px;
-    line-height: 18px;
-}
+    .header {
+        padding: 17px;
+    }
 
-.footer_menu ul {
-    gap: 11px;
-}
+    nav {
+        max-width: 485px;
+        height: 78px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 
-.footer_menu ul a {
-    font-size: 12px;
-    line-height: 20px;
-}
+    .nav_links,
+    .nav_media {
+        display: none;
+    }
 
-.our_netWork {
-    width: 184px;
-    gap: 7px;
-}
+    .toggler {
+        display: flex;
+    }
 
-.location p,
-.Ph_num p {
-    font-size: 12px;
-    line-height: 17px;
-}
+    .brandLogo {
+        width: 206px;
+        padding: 0;
+    }
 
-.location img{
-    width: 40px;
-}
+    .brandLogo img {
+        width: 186px;
+    }
 
-.Ph_num img{
-    width: 30px;
-}
+    /* navBar End */
 
-.foot_media {
-    padding: 12px 0;
-    gap: 16px;
-}
+    /* Banner Start  */
+    .banner {
+        padding: 30px 20px;
+    }
 
-.foot_media img{
-    width: 25px;
-}
+    .banner_sec {
+        max-width: 378px;
+        padding: 50px 0;
+        gap: 59px;
+    }
 
-/* Footer End */
+    .banner_txt {
+        width: 353px;
+        padding: 0;
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+    }
+
+    .banner_txt h1 {
+        font-size: 48px;
+        font-weight: 400;
+        line-height: 55px;
+    }
+
+    .banner_txt h4 {
+        font-size: 26px;
+        line-height: 33px;
+    }
+
+    .try_free_btn {
+        width: 200px;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    /* Banner End  */
+
+    /* Feature Section Start  */
+
+    .features {
+        max-width: 485px;
+        padding: 80px 0;
+        gap: 50px;
+    }
+
+    .features_txt {
+        width: 285px;
+        gap: 7px;
+    }
+
+    .features_items {
+        width: 355px;
+        padding: 18px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 75px;
+    }
+
+    .features_video {
+        background-image: url('/Images/laptop_screen.png');
+    }
+
+    .play_btn {
+        width: 61px;
+        height: 61px;
+        border: none;
+    }
+
+    .play_btn img {
+        width: 12px;
+    }
+
+    /* Feature Section End  */
+
+    /* organize Section start */
+    .organize {
+        max-width: 485px;
+        padding: 50px 0;
+        flex-direction: column;
+        align-items: center;
+        gap: 59px;
+    }
+
+    .organize_txt {
+        width: 355px;
+        align-items: center;
+        gap: 59px;
+    }
+
+    .organize_txt_content {
+        text-align: center;
+        gap: 21px;
+    }
+
+    .laptop_screen {
+        width: 378px;
+    }
+
+    /* organize Section End */
+
+    /* PhotoGraph Section start */
+    .photoGraph {
+        max-width: 485px;
+        padding: 59px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 59px;
+    }
+
+    .img_screen {
+        width: 389px;
+    }
+
+    .register {
+        width: 373px;
+        gap: 13px;
+    }
+
+    .register_txt_content {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 21px;
+    }
+
+    .register_Email {
+        align-items: center;
+    }
+
+    .email {
+        flex-direction: column;
+        padding: 24px 0;
+    }
+
+    .input_email {
+        width: 353px;
+        padding: 19px 35px;
+    }
+
+    .mailBtn {
+        width: 353px;
+        padding: 17px 0;
+    }
+
+    /* PhotoGraph Section End */
+
+    /* Client Section Start */
+    .client {
+        max-width: 485px;
+        padding: 50px 20px;
+    }
+
+    .partner {
+        width: 330px;
+        padding-top: 0;
+        gap: 21px;
+    }
+
+    .clientsLogo {
+        padding: 18px 0;
+        gap: 30px;
+    }
+
+    .logo_box {
+        width: 273px;
+        padding: 25px 0;
+    }
+
+    /* Client Section End */
+
+    /* designer Section start */
+    .designer,
+    .pricing {
+        max-width: 485px;
+    }
+
+    .about_IBM {
+        width: 297px;
+        gap: 45px;
+    }
+
+    .IBM_logo {
+        width: 126px;
+    }
+
+    .about_IBM h4 {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 0.17px;
+    }
+
+    .about_designer {
+        gap: 11px;
+    }
+
+    /* designer Section End */
+
+    /* Pricing Section start */
+
+    .pricing_txt_content {
+        width: 330px;
+        gap: 21px;
+    }
+
+    .sales_deal {
+        padding: 18px;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    /* Pricing Section End */
+
+    /* Contact Section start */
+    .contact {
+        max-width: 485px;
+        align-items: center;
+    }
+
+    .contact_txt {
+        width: 330px;
+        gap: 21px;
+    }
+
+    .contact_info {
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+
+    .signUp_form {
+        width: 378px;
+    }
+
+    .our_info {
+        width: 100%;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .information {
+        flex-direction: column;
+        padding: 18px 0;
+        gap: 21px;
+    }
+
+    .address {
+        width: 100%;
+    }
+
+    .phone {
+        width: 100%;
+    }
+
+    .mail {
+        width: 100%;
+    }
+
+    .block {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 21px;
+    }
+
+    .block img {
+        width: 26px;
+    }
+
+    .block h6 {
+        font-family: 'Graphik';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 23px;
+        letter-spacing: 0.1px;
+        text-align: left;
+        color: #374754;
+        cursor: pointer;
+    }
+
+    .map {
+        display: none;
+    }
+
+    /* Contact Section End */
+
+    /* Footer start */
+    .visiting {
+        max-width: 285px;
+        padding: 150px 0;
+        flex-direction: column;
+        align-items: center;
+        gap: 76px;
+    }
+
+    .visitSite {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 73px;
+    }
+
+    .footer_menu {
+        width: 186px;
+        flex-direction: column;
+        text-align: center;
+        gap: 21px;
+    }
+
+    .our_netWork {
+        width: 100%;
+        gap: 16px;
+    }
+
+    .foot_media {
+        justify-content: center;
+    }
+
+    /* Footer End */
 
 }
