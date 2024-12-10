@@ -778,6 +778,7 @@ nav {
     margin: 0 auto;
     padding: 50px 0;
     display: flex;
+    align-items: center;
     flex-direction: column;
     gap: 50px;
 }
@@ -1126,8 +1127,8 @@ nav {
     }
 
     .features_txt h4 {
-        font-size: 17px;
-        line-height: 25px;
+        font-size: 23px;
+        line-height: 30px;
     }
 
     .features_items {
@@ -1282,7 +1283,7 @@ nav {
     }
 
     .partner h4 {
-        font-size: 21px;
+        font-size: 23px;
         line-height: 30px;
     }
 
