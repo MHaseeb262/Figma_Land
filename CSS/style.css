@@ -951,7 +951,7 @@ nav {
 /* Contact Section End */
 
 /* Footer start */
-.visiting {
+.footer {
     max-width: 991px;
     width: 95%;
     padding: 150px 0;
@@ -1049,26 +1049,32 @@ nav {
     }
 
     .nav_links {
-        width: 37%;
+        width: 44%;
     }
 
     .nav_links ul {
-        gap: 7px;
+        gap: 1px;
+    }
+
+    .nav_links ul li {
+        width: 20%;
     }
 
     .nav_links ul a {
-        width: 20%;
         font-size: 13px;
     }
 
     .brandLogo {
+        width: 31%;
         height: 60px;
+        padding: 0;
         display: flex;
         justify-content: center;
     }
 
     .nav_media {
-        gap: 17px;
+        width: 25%;
+        gap: 15px;
     }
 
     .nav_media img {
@@ -1081,13 +1087,13 @@ nav {
     /* Banner Start  */
     .banner_sec {
         max-width: 1200px;
+        height: 770px;
         gap: 30px;
     }
 
     .banner_txt {
         width: 555px;
         margin-top: 100px;
-        height: 400px;
     }
 
     .banner_txt h1 {
@@ -1555,7 +1561,7 @@ nav {
     /* Contact Section End */
 
     /* Footer start */
-    .visiting {
+    .footer {
         max-width: 644px;
         padding: 75px 0;
     }
@@ -1827,6 +1833,10 @@ nav {
         padding: 25px 0;
     }
 
+    .disable{
+        display: none;
+    }
+
     /* Client Section End */
 
     /* designer Section start */
@@ -1945,7 +1955,7 @@ nav {
     /* Contact Section End */
 
     /* Footer start */
-    .visiting {
+    .footer {
         max-width: 285px;
         padding: 150px 0;
         flex-direction: column;
