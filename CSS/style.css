@@ -637,11 +637,6 @@ nav {
     border: 1px solid #DEDEDE;
     border-radius: 11px;
     background-color: #FFFFFF;
-
-    &.active {
-        background-color: #2091F9;
-        padding: 83px 40px;
-    }
 }
 
 .head {
@@ -659,10 +654,6 @@ nav {
     line-height: 28px;
     letter-spacing: 0.1px;
     color: #252B42;
-
-    &.active {
-        color: #FFFFFF;
-    }
 }
 
 .head h6 {
@@ -673,10 +664,6 @@ nav {
     letter-spacing: 0.1px;
     text-align: center;
     color: #374754;
-
-    &.active {
-        color: #FFFFFF;
-    }
 }
 
 .price {
@@ -692,10 +679,6 @@ nav {
     line-height: 84px;
     letter-spacing: 0.2px;
     color: #252B42;
-
-    &.active {
-        color: #FFFFFF;
-    }
 }
 
 .doller {
@@ -710,10 +693,6 @@ nav {
     line-height: 28px;
     letter-spacing: 0.1px;
     color: #252B42;
-
-    &.active {
-        color: #FFFFFF;
-    }
 }
 
 .doller h6 {
@@ -723,10 +702,6 @@ nav {
     line-height: 23px;
     letter-spacing: 0.1px;
     color: #374754;
-
-    &.active {
-        color: #FFFFFF;
-    }
 }
 
 .feature_row ul {
@@ -743,10 +718,6 @@ nav {
     line-height: 28px;
     letter-spacing: 0.2px;
     color: #252B42;
-
-    &.active {
-        color: #FFFFFF;
-    }
 }
 
 .confirm_deal {
@@ -762,11 +733,33 @@ nav {
     color: #FFFFFF;
     background-color: #2091F9;
     cursor: pointer;
+}
 
-    &.active {
-        color: #2091F9;
-        background-color: #FFFFFF;
-    }
+.deal:hover {
+    background-color: #2091F9;
+    padding: 83px 40px;
+    transition: all 0.3s;
+}
+
+.deal:hover h1{
+    color: #FFFFFF;
+}
+
+.deal:hover h3{
+    color: #FFFFFF;
+}
+
+.deal:hover h6{
+    color: #FFFFFF;
+}
+
+.deal:hover li{
+    color: #FFFFFF;
+}
+
+.deal:hover button{
+    color: #2091F9;
+    background-color: #FFFFFF;
 }
 
 /* Pricing Section End */
@@ -1381,10 +1374,10 @@ nav {
         width: 235px;
         padding: 20px;
         gap: 21px;
+    }
 
-        &.active {
-            padding: 60px 20px;
-        }
+    .deal:hover{
+        padding: 60px 20px;
     }
 
     .head {
@@ -1834,7 +1827,7 @@ nav {
         padding: 25px 0;
     }
 
-    .disable{
+    .disable {
         display: none;
     }
 
