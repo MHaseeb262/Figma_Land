@@ -28,10 +28,10 @@
             <div class="nav_links">
                 <ul>
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">Product</a></li>
-                    <li><a href="#">Pricing</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#features-sec">Product</a></li>
+                    <li><a href="#pricing-sec">Pricing</a></li>
+                    <li><a href="#designer-sec">About</a></li>
+                    <li><a href="#contact-sec">Contact</a></li>
                 </ul>
             </div>
 
@@ -75,7 +75,7 @@
     <!-- banner Section End -->
 
     <!-- Features Section start -->
-    <section class="features-sec">
+    <section id="features-sec">
         <div class="container">
             <div class="features">
 
@@ -108,10 +108,16 @@
                     </div>
 
                 </div>
+
                 <div class="features_video">
-                    <div class="play_btn">
-                        <img src="/Images/play_btn.svg" alt="Play Button Image">
-                    </div>
+
+                    <video id="myVideo" poster="/Images/video_screen.svg" width="100%" height="auto" muted loop>
+                        <source src="/video/Welcome to video.mp4" type="video/mp4">
+                    </video>
+                    <button class="play_btn" id="play_btn">
+                        <img id="btnIcon" src="/Images/play_btn.svg" alt="Play Button Image">
+                    </button>
+
                 </div>
 
             </div>
@@ -120,7 +126,7 @@
     <!-- Features Section End -->
 
     <!-- organize Section start -->
-    <section class="organize-sec">
+    <section id="organize-sec">
         <div class="container">
             <div class="organize">
 
@@ -128,7 +134,8 @@
 
                     <div class="organize_txt_content">
                         <h2>Fastest way to organize</h2>
-                        <h4 class="rewrite">Most calendars are designed for teams. Slate is designed for freelancers</h4>
+                        <h4 class="rewrite">Most calendars are designed for teams. Slate is designed for freelancers
+                        </h4>
                     </div>
                     <a href="#" class="try_free_btn">Try For Free</a>
 
@@ -141,7 +148,7 @@
     <!-- organize Section End -->
 
     <!-- PhotoGraphy Section start -->
-    <section class="photoGraphy-sec">
+    <section id="photoGraphy-sec">
         <div class="container">
             <div class="photoGraph">
 
@@ -175,7 +182,7 @@
     <!-- PhotoGraphy Section End -->
 
     <!-- Client Section Start -->
-    <section class="client-sec">
+    <section id="client-sec">
         <div class="container">
             <div class="client">
 
@@ -227,7 +234,7 @@
     <!-- Partners Section End -->
 
     <!-- Designer Section start -->
-    <section class="designer-sec">
+    <section id="designer-sec">
         <div class="container">
             <div class="designer">
 
@@ -259,7 +266,7 @@
     <!-- Designer Section End -->
 
     <!-- pricing Section Start -->
-    <section class="pricing-sec">
+    <section id="pricing-sec">
         <div class="container active">
             <div class="pricing">
 
@@ -351,7 +358,7 @@
     <!-- pricing Section End -->
 
     <!-- Contect Section Start -->
-    <section class="contact-sec">
+    <section id="contact-sec">
         <div class="container">
             <div class="contact">
 

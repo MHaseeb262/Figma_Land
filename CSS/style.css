@@ -3,6 +3,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 @font-face {
     font-family: 'Graphik';
@@ -241,7 +244,7 @@ nav {
     color: #374754;
 }
 
-.features_video {
+/* .features_video {
     width: 100%;
     background-image: url('/Images/video_screen.svg');
     background-position: center;
@@ -250,20 +253,41 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
+} */
+
+.features_video{
+    position: relative;
 }
 
 .play_btn {
     width: 187px;
     height: 187px;
     background-color: #2091F9;
+    position: absolute;
+    top: 39%;
+    left: 44%;
     display: flex;
     align-items: center;
     justify-content: center;
     border: none;
     border-radius: 50%;
     cursor: pointer;
+    transition: opacity 0.5s ease-in-out; /* Add transition for opacity */
+    opacity: 1; /* Initially visible */
 }
 
+.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* .features_video:hover .play_btn {
+    opacity: 1; /* Show button on hover 
+} */
+
+/* .features_video video:not(:paused):hover ~ .play_btn {
+    opacity: 1;
+} */
 /* Feature Section End  */
 
 /* organize Section start */
@@ -737,8 +761,7 @@ nav {
 
 .deal:hover {
     background-color: #2091F9;
-    padding: 83px 40px;
-    transition: all 0.3s;
+    transition: all 0.3s linear;
 }
 
 .deal:hover h1{
@@ -1376,10 +1399,6 @@ nav {
         gap: 21px;
     }
 
-    .deal:hover{
-        padding: 60px 20px;
-    }
-
     .head {
         width: 92px;
         gap: 7px;
@@ -1716,9 +1735,9 @@ nav {
         gap: 75px;
     }
 
-    .features_video {
+    /* .features_video {
         background-image: url('/Images/laptop_screen.png');
-    }
+    } */
 
     .play_btn {
         width: 61px;
